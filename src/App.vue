@@ -1,12 +1,13 @@
 <template>
-  <div class="app">
+  <div id="app">
     <router-view>
       <!-- 路由出口 -->
     </router-view>
-    <van-button plain type="primary">朴素按钮</van-button>
-    <van-button plain type="info">朴素按钮</van-button>
-    <van-cell title="单元格" value="内容" size="large" />
-<van-cell title="单元格" value="内容" size="large" label="描述信息" />
+    <van-button type="default">默认按钮</van-button>
+    <van-button type="primary">主要按钮</van-button>
+    <van-button type="info">信息按钮</van-button>
+    <van-button type="warning">警告按钮</van-button>
+    <van-button type="danger">危险按钮</van-button>
   </div>
 </template>
 
@@ -16,5 +17,6 @@ export default {
 }
 </script>
 
-<style scoped>
-</style>>
+<style lang="less" scoped>
+@import url("./styles/variables.less");
+</style>
